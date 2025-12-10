@@ -2,7 +2,7 @@ export const iotData = {
   active: "iot",
 
   landing: {
-    image: "/images/iot-background.jpg",
+    video: "/videos/iot.mp4",
     hub: "INTERNET OF THINGS HUB",
     title: "Connecting the Future",
     description:
@@ -21,39 +21,72 @@ export const iotData = {
   ],
 
   solutions: [
-    {
-      id: 1,
-      title: "Threat Monitoring",
-      description: "Real-time detection of cyber threats and vulnerabilities.",
-      image: "/cyberservice1.jpg",
-    },
-    {
-      id: 2,
-      title: "Data Protection",
-      description: "Securing sensitive information with advanced encryption.",
-      image: "/cyberservice2.jpg",
-    },
-    {
-      id: 3,
-      title: "Incident Response",
-      description: "Rapid action to minimize damage from security breaches.",
-      image: "/cyberservice3.jpg",
-    },
-    {
-      id: 4,
-      title: "Network Defense",
-      description: "Protecting your networks from intrusions and attacks.",
-      image: "/cyberservice4.jpg",
-    },
+    {  id: 1,
+    title: "Smart Device Integration",
+    description: "Seamlessly connect and manage all your IoT devices.",
+    image: "/iot1.jpg",
+  },
+  {
+    id: 2,
+    title: "Real-Time Analytics",
+    description: "Gain actionable insights from live data streams.",
+    image: "/iot2.jpg",
+  },
+  {
+    id: 3,
+    title: "Automation & Control ",
+    description: "Automate processes to boost efficiency and reduce errors.",
+    image: "/iot3.jpg",
+    category: "iot",
+  },
+  {
+    id: 4,
+    title: "Smart Systems",
+    description: "Automate lights, machines, and sensors to cut costs and boost efficiency.",
+    image: "/iot4.jpg",
+  },
   ],
 
   overview: {
-    heading: "About Us",
+    heading: "Our IoT Expertise",
     description:
-      "Apex Tech Hub, a technology consortium based in Quetta which unites innovation and expertise across IoT, GIS, and Cybersecurity, delivering advanced tech solutions with a team of internationally trained professionals",
+      "Apex Tech Hub excels in IoT solutions, designing and deploying smart devices and connected systems that transform businesses. Our team of internationally trained engineers delivers real-time monitoring, automation, and innovative IoT applications to drive efficiency and growth.",
     logo: "/logo-apex.png",
     longImage: "/cyberabout1.jpg",
     shortImage: "/cyberabout2.jpg",
     buttonText: "Explore Now",
+  },
+  teamData: {
+    heading: "Our IoT Team",
+    members: [
+      {
+        id: 1,
+        name: "John Doe",
+        designation: "IoT Engineer",
+        image:
+          "https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&w=800&q=60",
+      },
+      {
+        id: 2,
+        name: "Robert Johnson",
+        designation: "Embedded Systems Lead",
+        image:
+          "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=800&q=60",
+      },
+      {
+        id: 3,
+        name: "Jane Smith",
+        designation: "Hardware Analyst",
+        image:
+          "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=800&q=60",
+      },
+      {
+        id: 4,
+        name: "Emily Davis",
+        designation: "UX for Smart Devices",
+        image:
+          "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=800&q=60",
+      },
+    ],
   },
 };

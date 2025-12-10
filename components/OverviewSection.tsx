@@ -30,7 +30,7 @@ export default function OverviewSection({
 
       {/* Left column */}
       <div className="relative z-10 flex-1 px-10">
-        <h2 className="text-4xl sm:text-5xl font-bold mb-4">{heading}</h2>
+        <h2 className="text-4xl sm:text-5xl md:text-4xl font-bold mb-4">{heading}</h2>
         <p className="text-lg mb-6">{description}</p>
         <FancyButton buttonText={buttonText} />
       </div>

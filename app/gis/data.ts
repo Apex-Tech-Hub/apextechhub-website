@@ -2,11 +2,11 @@ export const gisData = {
   active: "gis",
 
   landing: {
-    image: "/images/gis-background.jpg",
+    video: "/videos/gis.mp4",
     hub: "GIS HUB",
-    title: "Shielding Your Digital World",
+    title: "Mapping the World for Smarter Decisions",
     description:
-      "We protect your data, systems, and networks from evolving cyber threats",
+      "We turn geographic data into actionable insights with advanced mapping solutions.",
   },
 
   logos: [
@@ -21,39 +21,72 @@ export const gisData = {
   ],
 
   solutions: [
-    {
-      id: 1,
-      title: "Threat Monitoring",
-      description: "Real-time detection of cyber threats and vulnerabilities.",
-      image: "/cyberservice1.jpg",
-    },
-    {
-      id: 2,
-      title: "Data Protection",
-      description: "Securing sensitive information with advanced encryption.",
-      image: "/cyberservice2.jpg",
-    },
-    {
-      id: 3,
-      title: "Incident Response",
-      description: "Rapid action to minimize damage from security breaches.",
-      image: "/cyberservice3.jpg",
-    },
-    {
-      id: 4,
-      title: "Network Defense",
-      description: "Protecting your networks from intrusions and attacks.",
-      image: "/cyberservice4.jpg",
-    },
+      {
+        id: 1,
+        title: "Satellite Image Analysis",
+        description: "High-resolution satellite data for planning, monitoring, and research.",
+        image: "/gis4.jpg",
+      },
+      {
+        id: 2,
+        title: "Urban Planning Maps",
+        description: "Smart city maps for roads, utilities, and development projects.",
+        image: "/gis2.jpg",
+      },
+      {
+        id: 3,
+        title: "Land Survey Mapping",
+        description: "Accurate land measurement and digital boundary mapping.",
+        image: "/gis3.png",
+      },
+      {
+        id: 4,
+        title: "Environmental Monitoring",
+        description: "Track climate, water, and land changes using GIS data.",
+        image: "/gis1.jpg",
+      },
   ],
 
   overview: {
-    heading: "About Us",
+    heading: "Our GIS Expertise",
     description:
-      "Apex Tech Hub, a technology consortium based in Quetta which unites innovation and expertise across IoT, GIS, and Cybersecurity, delivering advanced tech solutions with a team of internationally trained professionals",
+      "Apex Tech Hub leverages advanced GIS technology to turn spatial data into actionable insights. Our team of skilled professionals delivers mapping, analysis, and location intelligence solutions that empower smarter decision-making across industries.",
     logo: "/logo-apex.png",
     longImage: "/cyberabout1.jpg",
     shortImage: "/cyberabout2.jpg",
     buttonText: "Explore Now",
+  },
+   teamData: {
+    heading: "Our GIS Team",
+    members: [
+      {
+        id: 1,
+        name: "John Doe",
+        designation: "IoT Engineer",
+        image:
+          "https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&w=800&q=60",
+      },
+      {
+        id: 2,
+        name: "Robert Johnson",
+        designation: "Embedded Systems Lead",
+        image:
+          "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=800&q=60",
+      },
+      {
+        id: 3,
+        name: "Jane Smith",
+        designation: "Hardware Analyst",
+        image:
+          "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=800&q=60",
+      },
+      {
+        id: 4,
+        name: "Emily Davis",
+        designation: "UX for Smart Devices",
+        image:
+          "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=800&q=60",
+      },
+    ],
   },
 };

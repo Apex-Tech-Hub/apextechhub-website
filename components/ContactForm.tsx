@@ -3,7 +3,7 @@ import FancyButton from "./FancyButton";
 
 export default function ContactForm() {
   return (
-    <section className="w-full flex flex-col md:flex-row items-start justify-between gap-10 py-20 px-4 md:px-10">
+    <section className="w-full flex flex-col md:flex-row items-start justify-between gap-10 py-20 px-4 md:px-10" id="contact-form">
       {/* Left side */}
       <div className="flex flex-col justify-between w-full md:w-1/2 gap-6">
         <div>
@@ -30,12 +30,11 @@ export default function ContactForm() {
           </a>
         </div>
 
-        <div className="w-full h-px bg-gray-300 mt-6"></div>
       </div>
 
       {/* Right side form */}
       <div className="w-full md:w-1/2 bg-gray-100 rounded-3xl p-8 shadow-sm">
-        <h3 className="text-2xl font-semibold mb-6">Fill out the form</h3>
+        <h3 className="text-2xl text-center font-semibold mb-6">Fill out the form</h3>
 
         <form className="flex flex-col gap-6">
           {/* Name */}

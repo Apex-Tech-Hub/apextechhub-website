@@ -62,7 +62,7 @@ export default function OurSolutions({
     <section className="w-full max-w-[calc(100%-2rem)] rounded-3xl bg-black "> 
         <div className="flex justify-between items-center" >
             <div className="text-white pl-10 pt-10">
-                <h2 className="text-4xl sm:text-5xl font-bold mb-4">{heading}</h2>
+                <h2 className="text-4xl sm:text-5xl md:text-4xl font-bold mb-4">{heading}</h2>
                 <p className="text-lg">{description}</p>
             </div>
             <Image
