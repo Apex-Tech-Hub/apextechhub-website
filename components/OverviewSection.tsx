@@ -21,7 +21,7 @@ export default function OverviewSection({
   shortImage,
 }: OverviewSectionProps) {
   return (
-    <section className="relative w-full max-w-[calc(100%-2rem)] mx-auto py-20 flex items-center justify-between overflow-hidden">
+    <section className="relative w-full max-w-[calc(100%-2rem)] mx-auto py-20 flex flex-col lg:flex-row gap-10 items-center justify-between overflow-hidden">
       
       {/* Logo in the background */}
       <div className="absolute  flex left-10 top-20 justify-center items-center opacity-10   pointer-events-none">
@@ -29,7 +29,7 @@ export default function OverviewSection({
       </div>
 
       {/* Left column */}
-      <div className="relative z-10 flex-1 px-10">
+      <div className="relative z-10 text-center lg:text-left flex-1 md:px-10 px-0">
         <h2 className="text-4xl sm:text-5xl md:text-4xl font-bold mb-4">{heading}</h2>
         <p className="text-lg mb-6">{description}</p>
         <FancyButton buttonText={buttonText} />
@@ -42,7 +42,7 @@ export default function OverviewSection({
           alt="Long Image"
           width={300}
           height={100}
-          className="rounded-3xl object-cover"
+          className="rounded-3xl hidden md:block object-cover"
         />
         <Image
           src={shortImage}

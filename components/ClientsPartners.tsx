@@ -25,10 +25,10 @@ export default function ClientsPartners({
   return (
     <section className="w-full py-10  bg-white">
       <div className="max-full mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-3 items-center">
           {/* Left side - Heading (1/3) */}
-          <div className="text-left pl-10   ">
-            <h2 className="text-4xl sm:text-5xl lg:text-4xl font-bold text-gray-900 mb-6">
+          <div className="text-center lg:text-left pl-0 lg:pl-10   ">
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">
               {heading}
             </h2>
           </div>

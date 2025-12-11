@@ -36,9 +36,7 @@ export const AnimatedTooltip = ({
   );
 
   const handleMouseMove = (event: any) => {
-    if (animationFrameRef.current) {
-      cancelAnimationFrame(animationFrameRef.current);
-    }
+    if (animationFrameRef.current) cancelAnimationFrame(animationFrameRef.current);
 
     animationFrameRef.current = requestAnimationFrame(() => {
       const halfWidth = event.target.offsetWidth / 2;
@@ -47,11 +45,22 @@ export const AnimatedTooltip = ({
   };
 
   return (
-    <div className="flex items-center">
+    <div
+      className="
+        flex flex-wrap justify-center gap-6 
+        sm:grid sm:grid-cols-3 lg:gap-0 
+        lg:flex lg:flex-row 
+      "
+    >
       {items.map((item, index) => (
         <div
-          className="group relative -ml-6"
           key={item.id}
+          className="
+            group relative
+            flex justify-center 
+            sm:justify-center
+            lg:-ml-6
+          "
           style={{ zIndex: hoveredIndex === item.id ? 50 : index }}
           onMouseEnter={() => setHoveredIndex(item.id)}
           onMouseLeave={() => setHoveredIndex(null)}
@@ -76,7 +85,13 @@ export const AnimatedTooltip = ({
                   rotate: rotate,
                   whiteSpace: "nowrap",
                 }}
-                className="absolute -top-20 left-1/2 z-[60] flex -translate-x-1/2 flex-col items-center justify-center rounded-md bg-black px-4 py-2 text-xs shadow-xl"
+                className="
+                  absolute -top-20 left-1/2 z-[60]
+                  -translate-x-1/2
+                  flex flex-col items-center
+                  rounded-md bg-black px-4 py-2 
+                  text-xs shadow-xl
+                "
               >
                 <div className="relative z-30 text-base font-bold text-white">
                   {item.name}
@@ -86,17 +101,36 @@ export const AnimatedTooltip = ({
             )}
           </AnimatePresence>
 
-          {/* Bigger avatar + bigger glow */}
-          <div className="relative h-[200px] w-[200px]">
-            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-emerald-300/50 to-sky-300/50 blur-2xl opacity-60 group-hover:opacity-90 transition-all"></div>
+          {/* Avatar wrapper with responsive sizes */}
+          <div
+            className="
+              relative 
+              h-[150px] w-[150px] 
+              sm:h-[170px] sm:w-[170px]
+              lg:h-[200px] lg:w-[200px]
+            "
+          >
+            <div
+              className="
+                absolute inset-0 rounded-full 
+                bg-gradient-to-br from-emerald-300/50 to-sky-300/50 
+                blur-2xl opacity-60 
+                group-hover:opacity-90 
+                transition-all
+              "
+            ></div>
 
             <img
               onMouseMove={handleMouseMove}
-              height={200}
-              width={200}
               src={item.image}
               alt={item.name}
-              className="relative h-[200px] w-[200px] rounded-full border-2 border-white object-cover shadow-md transition duration-300 group-hover:scale-110 group-hover:shadow-xl"
+              className="
+                relative rounded-full object-cover border-2 border-white 
+                shadow-md transition 
+                duration-300 
+                group-hover:scale-110 group-hover:shadow-xl
+                h-full w-full
+              "
             />
           </div>
         </div>

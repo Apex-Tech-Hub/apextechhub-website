@@ -35,7 +35,7 @@ export default function AboutSection({
   return (
     <section className="relative w-full max-w-[calc(100%-2rem)] mx-auto py-20 flex flex-col lg:flex-row items-center gap-16 overflow-hidden">
       {/* Background Logo */}
-      <div className="absolute left-10 top-20 opacity-10 pointer-events-none">
+      <div className="absolute left-0 md:left-20 top-0 lg:left-10 lg:top-20 opacity-5 pointer-events-none">
         <Image
           src={logo}
           alt="Logo Background"
@@ -46,13 +46,13 @@ export default function AboutSection({
       </div>
 
       {/* Left Content */}
-      <div className="relative z-10 flex-1 px-4 sm:px-10">
-        <h2 className="text-4xl sm:text-5xl md:text-4xl font-bold mb-4">{heading}</h2>
-        <p className="text-lg mb-6 max-w-lg">{description}</p>
+      <div className="relative text-center lg:text-left z-10 flex-1 px-4 sm:px-10">
+        <h2 className="text-4xl font-bold mb-4">{heading}</h2>
+        <p className="text-lg mb-6  max-w-full lg:max-w-lg">{description}</p>
       </div>
 
       {/* Right Draggable Area */}
-      <div className="relative z-10 flex-1 w-full h-[600px] sm:h-[500px]">
+      <div className="relative z-10 flex-1 w-ful hidden lg:block md:h-[600px] sm:h-[500px]">
         <DraggableCardContainer className="relative w-full h-full overflow-visible">
           {items.map((item) => (
             <DraggableCardBody

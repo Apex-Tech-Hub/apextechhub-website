@@ -4,8 +4,8 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="w-full py-5 ">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+    <footer className="w-full p-10  ">
+      <div className="max-w-2xl lg:max-w-full flex justify-between flex-col-reverse md:flex-row mx-auto gap-12">
         {/* Logo Section */}
         <div>
           <Image

@@ -52,8 +52,8 @@ export const gisData = {
     description:
       "Apex Tech Hub leverages advanced GIS technology to turn spatial data into actionable insights. Our team of skilled professionals delivers mapping, analysis, and location intelligence solutions that empower smarter decision-making across industries.",
     logo: "/logo-apex.png",
-    longImage: "/cyberabout1.jpg",
-    shortImage: "/cyberabout2.jpg",
+    longImage: "/gisabout1.jpeg",
+    shortImage: "/gisabout2.jpeg",
     buttonText: "Explore Now",
   },
    teamData: {

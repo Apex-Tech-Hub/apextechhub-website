@@ -52,8 +52,8 @@ export const iotData = {
     description:
       "Apex Tech Hub excels in IoT solutions, designing and deploying smart devices and connected systems that transform businesses. Our team of internationally trained engineers delivers real-time monitoring, automation, and innovative IoT applications to drive efficiency and growth.",
     logo: "/logo-apex.png",
-    longImage: "/cyberabout1.jpg",
-    shortImage: "/cyberabout2.jpg",
+    longImage: "/iotabout1.jpeg",
+    shortImage: "/about1.jpeg",
     buttonText: "Explore Now",
   },
   teamData: {

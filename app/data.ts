@@ -100,19 +100,19 @@ export const aboutItems = [
     title: "Cybersecurity",
     image: "/images/cybersecurity-background.jpg",
     href: "/cybersecurity",
-    className: "absolute top-0 left-[10%] rotate-[-6deg]",
+    className: "absolute left-80 top-0 lg:left-[10%] rotate-[10deg] lg:rotate-[-6deg]",
   },
   {
     title: "Internet of Things",
     image: "/images/iot-background.jpg",
     href: "/iot",
-    className: "absolute top-20 left-[-30%] rotate-[-2deg]",
+    className: "absolute top-30 left-10 lg:top-20 lg:left-[-30%] rotate-[-10deg] lg:rotate-[-2deg]",
   },
   {
     title: "GIS",
     image: "/images/gis-background.jpg",
     href: "/gis",
-    className: "absolute top-30 right-5 rotate-[8deg]",
+    className: "absolute top-20 right-20 lg:top-30 lg:right-5 rotate-[-6deg] lg:rotate-[8deg]",
   },
 ];
 
