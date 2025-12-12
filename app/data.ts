@@ -92,7 +92,7 @@ export const aboutData = {
   description:
     "APEXTECH, a technology consortium based in Quetta, brings together three specialized solutions: IoT, GIS, and cybersecurity. It is dedicated to delivering high-quality IT projects, offering accredited tech diplomas to empower youth, and acting as a hub for IT exports and innovation.",
   buttonText: "Learn More",
-  logo: "/logo-apex.png",
+  logo: "/apexlogo.png",
 };
 
 export const aboutItems = [

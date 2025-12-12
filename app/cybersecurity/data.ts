@@ -51,7 +51,7 @@ export const cybersecurityData = {
     heading: "Our Cybersecurity Expertise",
     description:
       "Apex Tech Hub delivers advanced cybersecurity solutions to protect your systems, data, and networks. Our internationally trained team focuses on threat detection, risk prevention, and real-world digital defense.",
-    logo: "/logo-apex.png",
+    logo: "/apexlogo.png",
     longImage: "/cyberabout1.jpg",
     shortImage: "/cyberabout2.jpg",
     buttonText: "Explore Now",
