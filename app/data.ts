@@ -80,7 +80,7 @@ export const servicesData = [
   },
   {
     id: 12,
-    title: "Environmental Monitoring",
+    title: " Environmental Monitoring",
     description: "Track climate, water, and land changes using GIS data.",
     image: "/gis1.jpg",
     category: "gis",
