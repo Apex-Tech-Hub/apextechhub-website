@@ -8,9 +8,10 @@ import ClientsPartners from "../components/ClientsPartners";
 import AboutSection from "@/components/AboutSection";
 import ServicesSection from "@/components/ServicesSection";
 import ContactForm from "@/components/ContactForm";
+import OurTeam from "@/components/OurTeam";
 import Footer from "@/components/Footer";
 
-import { servicesData, logos, landingData, aboutData, aboutItems } from "./data";
+import { servicesData, logos, landingData, aboutData, aboutItems, teamData } from "./data";
 
 export default function Home() {
   const [showBackground, setShowBackground] = useState(true);
@@ -41,6 +42,10 @@ export default function Home() {
         buttonText={aboutData.buttonText}
         logo={aboutData.logo}
         items={aboutItems}
+      />
+      <OurTeam 
+        heading={teamData.heading}
+        members={teamData.members}
       />
 
       <ServicesSection

@@ -138,3 +138,36 @@ export const landingData = {
     "We specialize in IoT, GIS, and Cybersecurity solutions that drive innovation and secure your digital landscape.",
 };
 
+export const teamData = {
+  heading: "Executive Team",
+  members: [
+    {
+      id: 1,
+      name: "Dr. Shafi Ullah",
+      designation: "Founder & CEO",
+      image:
+        "/employee/executive/shafi-ullah.jpeg",
+    },
+    {
+      id: 2,
+      name: "Israr Khan",
+      designation: "Chief Financial Officer",
+      image:
+        "/employee/executive/israr-khan.jpeg",
+    },
+    {
+      id: 3,
+      name: "Ahmed Shah",
+      designation: "Chief Technical Officer",
+      image:
+        "/employee/executive/ahmedshah.jpeg",
+    },
+    {
+      id: 4,
+      name: "Emily Davis",
+      designation: "UX for Smart Devices",
+      image:
+        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=800&q=60",
+    },
+  ],
+};
