@@ -43,10 +43,7 @@ export default function Home() {
         logo={aboutData.logo}
         items={aboutItems}
       />
-      <OurTeam 
-        heading={teamData.heading}
-        members={teamData.members}
-      />
+    
 
       <ServicesSection
         heading="Our Services"
@@ -55,6 +52,12 @@ export default function Home() {
       />
 
       <ContactForm />
+
+      <OurTeam 
+        heading={teamData.heading}
+        members={teamData.members}
+      />
+
       <Footer />
     </div>
   );

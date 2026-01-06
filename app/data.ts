@@ -97,22 +97,28 @@ export const aboutData = {
 
 export const aboutItems = [
   {
+    id: "cybersecurity",
     title: "Cybersecurity",
     image: "/images/cybersecurity-background.jpg",
     href: "/cybersecurity",
-    className: "absolute left-80 top-0 lg:left-[10%] rotate-[10deg] lg:rotate-[-6deg]",
+    className:
+      "absolute left-80 top-0 lg:left-[10%] rotate-[10deg] lg:rotate-[-6deg]",
   },
   {
+    id: "iot",
     title: "Internet of Things",
     image: "/images/iot-background.jpg",
     href: "/iot",
-    className: "absolute top-30 left-10 lg:top-20 lg:left-[-30%] rotate-[-10deg] lg:rotate-[-2deg]",
+    className:
+      "absolute top-30 left-10 lg:top-20 lg:left-[-30%] rotate-[-10deg] lg:rotate-[-2deg]",
   },
   {
+    id: "gis",
     title: "GIS",
     image: "/images/gis-background.jpg",
     href: "/gis",
-    className: "absolute top-20 right-20 lg:top-30 lg:right-5 rotate-[-6deg] lg:rotate-[8deg]",
+    className:
+      "absolute top-20 right-20 lg:top-30 lg:right-5 rotate-[-6deg] lg:rotate-[8deg]",
   },
 ];
 
@@ -161,13 +167,6 @@ export const teamData = {
       designation: "Chief Technical Officer",
       image:
         "/employee/executive/ahmedshah.jpeg",
-    },
-    {
-      id: 4,
-      name: "Emily Davis",
-      designation: "UX for Smart Devices",
-      image:
-        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=800&q=60",
-    },
+    }
   ],
 };
