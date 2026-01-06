@@ -18,12 +18,14 @@ interface ServicesSectionProps {
   heading?: string;
   description?: string;
   solutions: Solution[];
+  buttonLink?: string;
 }
 
 export default function ServicesSection({
   heading = "Our Services",
   description = "Smart solutions built for real-world problems",
   solutions,
+  buttonLink,
 }: ServicesSectionProps) {
   const [activeTab, setActiveTab] = useState<
     "cybersecurity" | "iot" | "gis"
@@ -42,9 +44,7 @@ export default function ServicesSection({
           <h2 className="text-4xl font-bold mb-4">{heading}</h2>
           <p className="text-lg mb-6 max-w-xl">{description}</p>
 
-          <a href="#contact-form">
-            <FancyButton buttonText="Get Started" />
-          </a>
+            <FancyButton buttonText="Get Started" buttonLink={buttonLink} />
         </div>
 
         <Image

@@ -55,6 +55,7 @@ export const iotData = {
     longImage: "/iotabout1.jpeg",
     shortImage: "/about1.jpeg",
     buttonText: "Explore Now",
+    buttonLink: "#contact-form",
   },
   teamData: {
     heading: "Our IoT Team",

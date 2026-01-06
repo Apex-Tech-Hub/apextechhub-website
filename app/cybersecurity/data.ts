@@ -55,6 +55,7 @@ export const cybersecurityData = {
     longImage: "/cyberabout1.jpg",
     shortImage: "/cyberabout2.jpg",
     buttonText: "Explore Now",
+    buttonLink: "#contact-form",
   },
 
   teamData: {

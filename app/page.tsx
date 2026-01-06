@@ -11,7 +11,7 @@ import ContactForm from "@/components/ContactForm";
 import OurTeam from "@/components/OurTeam";
 import Footer from "@/components/Footer";
 
-import { servicesData, logos, landingData, aboutData, aboutItems, teamData } from "./data";
+import { servicesData, logos, landingData, aboutData, aboutItems, teamData, servicesSection } from "./data";
 
 export default function Home() {
   const [showBackground, setShowBackground] = useState(true);
@@ -46,8 +46,9 @@ export default function Home() {
     
 
       <ServicesSection
-        heading="Our Services"
-        description="Cybersecurity, IoT, and GIS solutions built for the real world."
+        heading={servicesSection.heading}
+        description={servicesSection.description}
+        buttonLink={servicesSection.buttonLink}
         solutions={[...servicesData]}
       />
 

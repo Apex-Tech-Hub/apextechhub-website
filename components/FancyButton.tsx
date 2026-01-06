@@ -1,13 +1,19 @@
-import React from "react";
-
 interface FancyButtonProps {
   buttonText: string;
+  buttonLink?: string;
   onClick?: () => void;
 }
 
-export default function FancyButton({ buttonText, onClick }: FancyButtonProps) {
+export default function FancyButton({
+  buttonText,
+  buttonLink,
+  onClick,
+}: FancyButtonProps) {
+  const Component = buttonLink ? "a" : "button";
+
   return (
-    <button
+    <Component
+      href={buttonLink}
       onClick={onClick}
       className="relative inline-flex h-12 overflow-hidden rounded-full p-[3px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-5 focus:ring-offset-slate-50"
     >
@@ -15,6 +21,6 @@ export default function FancyButton({ buttonText, onClick }: FancyButtonProps) {
       <span className="inline-flex h-full w-full min-w-50 cursor-pointer items-center justify-center rounded-full bg-white px-3 py-1 text-sm font-medium text-black backdrop-blur-3xl">
         {buttonText}
       </span>
-    </button>
+    </Component>
   );
 }

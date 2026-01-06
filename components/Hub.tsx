@@ -46,6 +46,7 @@ interface HubProps {
     longImage: string;
     shortImage: string;
     buttonText?: string;
+    buttonLink?: string;
   };
 
   teamData: {
@@ -84,6 +85,7 @@ export default function Hub({
         longImage={overview.longImage}
         shortImage={overview.shortImage}
         buttonText={overview.buttonText}
+        buttonLink={overview.buttonLink}
       />
 
       <OurTeam 

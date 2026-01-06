@@ -7,6 +7,7 @@ interface OverviewSectionProps {
   heading: string;
   description: string;
   buttonText?: string;
+  buttonLink?: string;
   logo: string;
   longImage: string;
   shortImage: string;
@@ -16,6 +17,7 @@ export default function OverviewSection({
   heading,
   description,
   buttonText = "Border Magic",
+  buttonLink,
   logo,
   longImage,
   shortImage,
@@ -32,7 +34,7 @@ export default function OverviewSection({
       <div className="relative z-10 text-center lg:text-left flex-1 md:px-10 px-0">
         <h2 className="text-4xl sm:text-5xl md:text-4xl font-bold mb-4">{heading}</h2>
         <p className="text-lg mb-6">{description}</p>
-        <FancyButton buttonText={buttonText} />
+        <FancyButton buttonText={buttonText} buttonLink={buttonLink} />
       </div>
 
       {/* Right column */}

@@ -55,6 +55,7 @@ export const gisData = {
     longImage: "/gisabout1.jpeg",
     shortImage: "/gisabout2.jpeg",
     buttonText: "Explore Now",
+    buttonLink: "#contact-form",
   },
    teamData: {
     heading: "Our GIS Team",

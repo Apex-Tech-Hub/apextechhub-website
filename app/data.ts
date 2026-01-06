@@ -1,5 +1,11 @@
 // src/data.ts
 
+export const servicesSection = {
+  heading: "Our Services",
+  description: "Cybersecurity, IoT, and GIS solutions built for the real world.",
+  buttonLink: "#contact-form",
+};
+
 export const servicesData = [
   {
     id: 1,
