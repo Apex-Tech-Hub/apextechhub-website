@@ -126,6 +126,7 @@ export default function Header({ active = "Home" }: { active?: string }) {
                     onClick={() => handleNav(tab.path)}
                     className={clsx(
                       "text-left px-4 py-3 rounded-lg font-medium",
+                     
                       isActive
                         ? "bg-lime-400 text-black"
                         : "text-gray-700 hover:bg-gray-100"
