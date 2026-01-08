@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="w-full p-10  ">
+    <footer className="w-full px-10 pb-10 pt-20 bg-black mt-10 text-white">
       <div className="max-w-2xl lg:max-w-full flex justify-between flex-col-reverse md:flex-row mx-auto gap-12">
         {/* Logo Section */}
         <div>
@@ -29,6 +29,23 @@ export default function Footer() {
             </li>
             <li>
               <a href="/gis" className="hover:text-lime-400 transition">GIS</a>
+            </li>
+          </ul>
+        </div>
+
+
+        {/* Pages Section */}
+        <div>
+          <h3 className="text-xl font-semibold mb-4">Pages</h3>
+          <ul className="space-y-3 ">
+            <li>
+              <a href="/teams" className="hover:text-lime-400 transition">Teams</a>
+            </li>
+            <li>
+              <a href="/projects" className="hover:text-lime-400 transition">Projects</a>
+            </li>
+            <li>
+              <a href="/certifications" className="hover:text-lime-400 transition">Certifications</a>
             </li>
           </ul>
         </div>
