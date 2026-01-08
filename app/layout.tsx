@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Onest, Montserrat } from "next/font/google";
 import "./globals.css";
+import WhatsAppButton from "@/components/WhatsappButton";
+import WhatsAppChat from "@/components/WhatsappChat";
 
 const onest = Onest({
   variable: "--font-onest",
@@ -28,6 +30,7 @@ export default function RootLayout({
         className={`${onest.variable} ${montserrat.variable} antialiased`}
       >
         {children}
+        <WhatsAppChat />
       </body>
     </html>
   );
