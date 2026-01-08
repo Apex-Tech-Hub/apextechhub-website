@@ -1,13 +1,20 @@
-import React from "react";
-import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import { 
+  FaPhone, 
+  FaEnvelope, 
+  FaMapMarkerAlt, 
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaYoutube, } from "react-icons/fa";
+import { SiUpwork } from "react-icons/si";
 import Image from "next/image";
 
 export default function Footer() {
   return (
     <footer className="w-full px-10 pb-10 pt-20 bg-black mt-10 text-white">
       <div className="max-w-2xl lg:max-w-full flex justify-between flex-col-reverse md:flex-row mx-auto gap-12">
-        {/* Logo Section */}
-        <div>
+       {/* Logo Section */}
+        <div className="flex flex-col gap-6">
           <Image
             src="/logo-apex.svg"
             alt="Logo"
@@ -15,6 +22,54 @@ export default function Footer() {
             height={200}
             className="object-contain"
           />
+
+          {/* Social Icons */}
+          <div className="flex items-center gap-4">
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 rounded-full bg-white/10 hover:bg-lime-400 hover:text-black transition"
+            >
+              <FaFacebookF />
+            </a>
+
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 rounded-full bg-white/10 hover:bg-lime-400 hover:text-black transition"
+            >
+              <FaInstagram />
+            </a>
+
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 rounded-full bg-white/10 hover:bg-lime-400 hover:text-black transition"
+            >
+              <FaLinkedinIn />
+            </a>
+
+            <a
+              href="https://www.upwork.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 rounded-full bg-white/10 hover:bg-lime-400 hover:text-black transition"
+            >
+              <SiUpwork />
+            </a>
+
+            <a
+              href="https://youtube.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 rounded-full bg-white/10 hover:bg-lime-400 hover:text-black transition"
+            >
+              <FaYoutube />
+            </a>
+          </div>
         </div>
 
         {/* Hubs Section */}

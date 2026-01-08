@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { MessageCircle, X } from "lucide-react";
+import { X } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function WhatsAppChat() {
   const [open, setOpen] = useState(false);
@@ -20,10 +21,10 @@ export default function WhatsAppChat() {
     <>
       {/* Floating Button */}
       <button
-        onClick={() => setOpen(true)}
+        onClick={() => setOpen((prev) => !prev)}
         className="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-green-500 flex items-center justify-center shadow-lg"
       >
-        <MessageCircle className="text-white w-7 h-7" />
+        <FaWhatsapp className="text-white w-7 h-7" />
       </button>
 
       {/* Popup */}
