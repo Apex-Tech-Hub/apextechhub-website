@@ -10,6 +10,8 @@ const tabs = [
   { name: "Cybersecurity", path: "/cybersecurity" },
   { name: "IOT", path: "/iot" },
   { name: "GIS", path: "/gis" },
+  { name: "Teams", path: "/teams" },
+
 ];
 
 export default function Header({ active = "Home" }: { active?: string }) {
