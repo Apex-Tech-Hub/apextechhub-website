@@ -23,7 +23,7 @@ export default function WhatsAppChat() {
         onClick={() => setOpen(true)}
         className="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-green-500 flex items-center justify-center shadow-lg"
       >
-        <Wha className="text-white w-7 h-7" />
+        <MessageCircle className="text-white w-7 h-7" />
       </button>
 
       {/* Popup */}
