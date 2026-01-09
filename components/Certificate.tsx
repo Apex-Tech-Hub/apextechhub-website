@@ -44,9 +44,9 @@ export default function CertificateCard({
         {/* Content */}
         <div className="flex flex-col gap-2">
           <h3 className="text-lg font-semibold">{title}</h3>
+          <p className="text-sm font-bold text-black">Issued by: {issuer}</p>
+          <p className="text-sm font-bold text-lime-600">{date}</p>
           <p className="text-sm text-gray-600">{description}</p>
-          <p className="text-sm text-gray-600">{date}</p>
-          <p className="text-sm text-gray-600">{issuer}</p>
 
         </div>
 
