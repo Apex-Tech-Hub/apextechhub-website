@@ -13,7 +13,7 @@ import Footer from "@/components/Footer";
 
 import { servicesData, logos, landingData, aboutData, aboutItems, teamData, servicesSection } from "./data";
 
-export default function Home() {
+export default function Page() {
   const [showBackground, setShowBackground] = useState(true);
 
   useEffect(() => {

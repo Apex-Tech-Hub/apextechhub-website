@@ -10,6 +10,8 @@ interface CertificateProps {
   description: string;
   image: string;
   pdfUrl: string;
+  date: string;
+  issuer: string;
 }
 
 export default function CertificateCard({
@@ -17,6 +19,8 @@ export default function CertificateCard({
   description,
   image,
   pdfUrl,
+  date,
+  issuer,
 }: CertificateProps) {
   const [open, setOpen] = useState(false);
 
@@ -41,6 +45,9 @@ export default function CertificateCard({
         <div className="flex flex-col gap-2">
           <h3 className="text-lg font-semibold">{title}</h3>
           <p className="text-sm text-gray-600">{description}</p>
+          <p className="text-sm text-gray-600">{date}</p>
+          <p className="text-sm text-gray-600">{issuer}</p>
+
         </div>
 
         {/* Download */}
