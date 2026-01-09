@@ -68,7 +68,7 @@ export default function CertificateCard({
               animate={{ scale: 1 }}
               exit={{ scale: 0.9 }}
               transition={{ duration: 0.2 }}
-              className="relative max-w-4xl w-full bg-white rounded-2xl overflow-hidden"
+              className="relative max-w-md w-full bg-white rounded-2xl overflow-hidden"
             >
               {/* Close */}
               <button
@@ -79,7 +79,7 @@ export default function CertificateCard({
               </button>
 
               {/* Zoomed Image */}
-              <div className="relative w-full h-[70vh]">
+              <div className="relative w-full h-155">
                 <Image
                   src={image}
                   alt={title}
