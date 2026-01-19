@@ -16,9 +16,8 @@ interface ClientsPartnersProps {
 export default function ClientsPartners({
   heading = "Our Clients & Partners",
   subheading = "Trusted by industry leaders worldwide",
-  logos
+  logos,
 }: ClientsPartnersProps) {
-
   // Duplicate logos for seamless loop
   const duplicatedLogos = [...logos, ...logos, ...logos];
 
@@ -28,9 +27,7 @@ export default function ClientsPartners({
         <div className="grid grid-cols-1 lg:grid-cols-3 items-center">
           {/* Left side - Heading (1/3) */}
           <div className="text-center lg:text-left pl-0 lg:pl-10   ">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">
-              {heading}
-            </h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">{heading}</h2>
           </div>
 
           {/* Right side - Scrolling logos (2/3) */}
@@ -38,7 +35,7 @@ export default function ClientsPartners({
             {/* Fade overlays */}
             <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none" />
             <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none" />
-            
+
             <div className="flex animate-scroll">
               {duplicatedLogos.map((logo, index) => (
                 <div

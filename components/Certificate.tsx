@@ -1,4 +1,4 @@
-    "use client";
+"use client";
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -47,7 +47,6 @@ export default function CertificateCard({
           <p className="text-sm font-bold text-black">Issued by: {issuer}</p>
           <p className="text-sm font-bold text-lime-600">{date}</p>
           <p className="text-sm text-gray-600">{description}</p>
-
         </div>
 
         {/* Download */}
