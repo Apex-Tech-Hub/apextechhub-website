@@ -1,7 +1,7 @@
 "use client";
 
-import Header from "./Header";
-import Footer from "./Footer";
+import Header from "./global/Header";
+import Footer from "./global/Footer";
 import OurTeam from "./OurTeam";
 
 interface TeamMember {

@@ -1,13 +1,13 @@
 "use client";
 
-import Header from "./Header";
+import Header from "./global/Header";
 import LandingSection from "./LandingSection";
 import ClientsPartners from "./ClientsPartners";
 import OurSolutions from "./OurSolutions";
 import OverviewSection from "./OverviewSection";
 import OurTeam from "./OurTeam";
 import ContactForm from "./ContactForm";
-import Footer from "./Footer";
+import Footer from "./global/Footer";
 
 interface TeamMember {
   id: number;

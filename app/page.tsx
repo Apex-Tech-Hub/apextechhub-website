@@ -2,14 +2,14 @@
 
 import { useState, useEffect } from "react";
 
-import Header from "../components/Header";
+import Header from "../components/global/Header";
 import LandingSection from "../components/LandingSection";
 import ClientsPartners from "../components/ClientsPartners";
 import AboutSection from "@/components/AboutSection";
 import ServicesSection from "@/components/ServicesSection";
 import ContactForm from "@/components/ContactForm";
 import OurTeam from "@/components/OurTeam";
-import Footer from "@/components/Footer";
+import Footer from "@/components/global/Footer";
 
 import { servicesData, logos, landingData, aboutData, aboutItems, teamData, servicesSection } from "./data";
 

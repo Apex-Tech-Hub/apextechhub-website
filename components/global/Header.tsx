@@ -13,6 +13,9 @@ const tabs = [
   { name: "GIS", path: "/gis" },
   { name: "Teams", path: "/teams" },
   { name: "Certificates", path: "/certificates" },
+  { name: "Our Products", path: "/products" },
+  { name: "Our Partners", path: "/partners" },
+  { name: "Portfolio", path: "/portfolio" },
 ];
 
 export default function Header({ active = "Home" }: { active?: string }) {

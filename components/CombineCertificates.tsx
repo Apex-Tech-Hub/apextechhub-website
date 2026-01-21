@@ -1,7 +1,7 @@
 "use client";
 
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import Header from "@/components/global/Header";
+import Footer from "@/components/global/Footer";
 import Certificate from "@/components/Certificate";
 
 interface CertificateData {
@@ -23,7 +23,13 @@ export default function CombineCerticiates({ active, certificates }: Certificate
   return (
     <div className="mt-30">
         <Header active={active} />
-        <h1 className="text-5xl font-bold text-center mt-10">Our Certifications</h1>
+        <h1 className="text-5xl font-bold text-center mt-10">Company Certifications</h1>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
+            {certificates.map((cert) => (
+                <Certificate key={cert.id} {...cert} />
+            ))}
+        </div>
+        <h1 className="text-5xl font-bold text-center mt-10">Team Certifications</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
             {certificates.map((cert) => (
                 <Certificate key={cert.id} {...cert} />
