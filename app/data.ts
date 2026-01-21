@@ -51,7 +51,7 @@ export const servicesData = [
   },
   {
     id: 7,
-    title: "Automation & Control ",
+    title: "Automation & Control",
     description: "Automate processes to boost efficiency and reduce errors.",
     image: "/iot3.jpg",
     category: "iot",
