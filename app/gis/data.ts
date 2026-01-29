@@ -60,34 +60,60 @@ export const gisData = {
    teamData: {
     heading: "Our GIS Team",
     members: [
-      {
-        id: 1,
-        name: "John Doe",
-        designation: "IoT Engineer",
-        image:
-          "https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&w=800&q=60",
-      },
-      {
-        id: 2,
-        name: "Robert Johnson",
-        designation: "Embedded Systems Lead",
-        image:
-          "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=800&q=60",
-      },
-      {
-        id: 3,
-        name: "Jane Smith",
-        designation: "Hardware Analyst",
-        image:
-          "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=800&q=60",
-      },
-      {
-        id: 4,
-        name: "Emily Davis",
-        designation: "UX for Smart Devices",
-        image:
-          "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=800&q=60",
-      },
+       {
+          id: 1,
+          name: "Ahmed Shah",
+          designation: "Team Lead",
+          image: "/employee/gis/ahmedshah.jpeg",
+        },
+        {
+          id: 2,
+          name: "Amjad Khan",
+          designation: "GIS Analyst and Map Design",
+          image: "/employee/gis/amjad.jpg",
+        },
+        {
+          id: 3,
+          name: "Ayesha Kasi",
+          designation: "Capacity Builder and Trainer",
+          image: "/employee/gis/ayesha.jpg",
+        },
+        {
+          id: 4,
+          name: "Niamat Ullah",
+          designation: "GIS Analyst",
+          image: "/employee/gis/Niamat.jpg",
+        },
+        {
+          id: 5,
+          name: "Muhammad Hassan",
+          designation: "Web GIS App Developer",
+          image: "/employee/gis/hassin.jpg",
+        },
+         {
+          id: 6,
+          name: "Basit Khan",
+          designation: "GIS Analayst",
+          image: "/employee/gis/basit.jpg",
+        },
+         {
+          id: 7,
+          name: "Muheeb Ullah",
+          designation: "Web GIS App Developer",
+          image: "/employee/gis/muheeb.jpg",
+        },
+         {
+          id: 8,
+          name: "Warisha",
+          designation: "Web GIS App Developer",
+          image: "/employee/gis/warisha.jpg",
+        },
+         {
+          id: 9,
+          name: "Salmana Ahmed  ",
+          designation: "Documentation/Reporting",
+          image: "/employee/gis/salmana.jpg",
+        },
     ],
   },
 };

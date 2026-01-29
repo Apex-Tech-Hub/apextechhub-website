@@ -1,31 +1,31 @@
 export const teamData = {
-  active: "teams",
+  active: "Board Members",
 
   teams: [
     {
-       heading: "Executive Team",
+       heading: "Our Board Members",
         members: [
           {
             id: 1,
-            name: "Dr. Shafi Ullah",
-            designation: "Founder & CEO",
+            name: "Dr. Faisal Ahmad Khan",
+            designation: "Board Member",
             image:
-              "/employee/executive/shafi-ullah.jpeg",
+              "/employee/board/faisal.jpg",
           },
-          {
-            id: 2,
-            name: "Israr Khan",
-            designation: "Co-Founder & CFO",
-            image:
-              "/employee/executive/israr-khan.jpeg",
-          },
-          {
-            id: 3,
-            name: "Ahmed Shah",
-            designation: "Chief Technical Officer",
-            image:
-              "/employee/executive/ahmedshah.jpeg",
-          },
+          // {
+          //   id: 2,
+          //   name: "Israr Khan",
+          //   designation: "Co-Founder & CFO",
+          //   image:
+          //     "/employee/executive/israr-khan.jpeg",
+          // },
+          // {
+          //   id: 3,
+          //   name: "Ahmed Shah",
+          //   designation: "Chief Technical Officer",
+          //   image:
+          //     "/employee/executive/ahmedshah.jpeg",
+          // },
     ],
     },
     {

@@ -62,31 +62,45 @@ export const iotData = {
     members: [
       {
         id: 1,
-        name: "John Doe",
-        designation: "IoT Engineer",
+        name: "Dr. Shafi Ullah",
+        designation: "Team Lead",
         image:
-          "https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&w=800&q=60",
+          "/employee/executive/shafi-ullah.jpeg",
       },
       {
         id: 2,
-        name: "Robert Johnson",
-        designation: "Embedded Systems Lead",
+        name: "Dr. Babar Ali",
+        designation: "IoT Engineer",
         image:
-          "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=800&q=60",
+          "/employee/default.jpg",
       },
       {
         id: 3,
-        name: "Jane Smith",
-        designation: "Hardware Analyst",
+        name: "Ahmed Shah",
+        designation: "Iot Engineer",
         image:
-          "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=800&q=60",
+          "/employee/executive/ahmedshah.jpeg",
       },
       {
         id: 4,
-        name: "Emily Davis",
-        designation: "UX for Smart Devices",
+        name: "Muheeb Ullah",
+        designation: "IoT Engineer",
         image:
-          "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=800&q=60",
+          "/employee/gis/muheeb.jpg",
+      },
+      {
+        id: 5,
+        name: "Laiba Imran",
+        designation: "IoT Engineer",
+        image:
+          "/employee/default.jpg",
+      },
+      {
+        id: 6,
+        name: "Faisal",
+        designation: "Consultant",
+        image:
+          "/employee/default.jpg",
       },
     ],
   },

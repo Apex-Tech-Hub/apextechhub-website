@@ -3,23 +3,33 @@ export const certificateData = {
   certificates: [
     {
       id: 1,
-      title: "ISO 27001 Certification",
+      title: "PASHA Associate Member Certificate",
       description:
-        "Certified for information security management systems and global security standards.",
-      image: "/certificates/iso-example.jpeg",
-      pdfUrl: "/certificates/iso-example.pdf",
-      date: "March 15, 2023",
-      issuer: "ISO",
+        "Apex Tech Hub is a certified associate member of PASHA",
+      image: "/certificates/company/pasha.jpg",
+      pdfUrl: "/certificates/company/PASHA_Certificate.pdf",
+      date: "April 31, 2026",
+      issuer: "PASHA",
     },
     {
       id: 2,
-      title: "ISO 9001 Certification",
+      title: "PSEB Registration Certificate",
       description:
-        "Quality management certification ensuring consistent service delivery.",
-      image: "/certificates/iso-example.jpeg",
-      pdfUrl: "/certificates/iso-example.pdf",
-      date: "June 10, 2022",
-      issuer: "ISO",
+        "Apex Tech Hub is registered with PSEB",
+      image: "/certificates/company/pseb.jpg",
+      pdfUrl: "/certificates/company/PSEB_Certificate.pdf",
+      date: "October 10, 2025",
+      issuer: "PSEB",
+    },
+    {
+      id: 3,
+      title: "SECP Registration Certificate",
+      description:
+        "Apex Tech Hub is registed with SECP",
+      image: "/certificates/company/secp.jpeg",
+      pdfUrl: "/certificates/company/secp.pdf",
+      date: "September 24, 2025",
+      issuer: "SECP",
     },
   ],
 };

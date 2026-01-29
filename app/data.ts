@@ -129,14 +129,14 @@ export const aboutItems = [
 ];
 
 export const logos = [
-     { id: 1, src: "/logos/sdss-logo.jpg", alt: "SDSS" },
-    { id: 2, src: "/logos/bhmis-logo.jpeg", alt: "BHMIS" },
-    { id: 3, src: "/logos/gob-logo.jpg", alt: "GOB" },
-    { id: 4, src: "/logos/icrms-logo.png", alt: "ICRMS" },
-    { id: 5, src: "/logos/iwmis-logo.webp", alt: "IWMI" },
-    { id: 6, src: "/logos/ncgsa-logo.png", alt: "NCGSA" },
-    { id: 7, src: "/logos/ndma-logo.png", alt: "NDMA" },
-    { id: 8, src: "/logos/suparco-logo.png", alt: "SUPARCO" },
+  { id: 1, src: "/logos/sdss-logo.jpg", alt: "SDSS" },
+  { id: 2, src: "/logos/bhmis-logo.jpeg", alt: "BHMIS" },
+  { id: 3, src: "/logos/gob-logo.jpg", alt: "GOB" },
+  { id: 4, src: "/logos/icrms-logo.png", alt: "ICRMS" },
+  { id: 5, src: "/logos/iwmis-logo.webp", alt: "IWMI" },
+  { id: 6, src: "/logos/ncgsa-logo.png", alt: "NCGSA" },
+  { id: 7, src: "/logos/ndma-logo.png", alt: "NDMA" },
+  { id: 8, src: "/logos/suparco-logo.png", alt: "SUPARCO" },
 ];
 
 
@@ -163,7 +163,7 @@ export const teamData = {
     {
       id: 2,
       name: "Israr Khan",
-      designation: "Chief Financial Officer",
+      designation: "Co-Founder & CFO",
       image:
         "/employee/executive/israr-khan.jpeg",
     },
