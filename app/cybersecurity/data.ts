@@ -92,6 +92,12 @@ export const cybersecurityData = {
         image:
           "/employee/cyber/sameer-azam.jpeg",
       },
+       {
+          id: 5,
+          name: "Faiza Boman Ali",
+          designation: "Smart Office assistant & Cybersecurity Analyst",
+          image: "/employee/software/faiza-boman.jpeg",
+        },
     ],
   },
 };

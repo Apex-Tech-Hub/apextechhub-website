@@ -55,6 +55,12 @@ export const teamData = {
           designation: "Cybersecurity Specialist",
           image: "/employee/cyber/sameer-azam.jpeg",
         },
+        {
+          id: 5,
+          name: "Faiza Boman Ali",
+          designation: "Smart Office assistant & Cybersecurity Analyst",
+          image: "/employee/software/faiza-boman.jpeg",
+        },
       ],
     },
     {
@@ -80,13 +86,6 @@ export const teamData = {
         },
         {
           id: 4,
-          name: "Faiza Boman Ali",
-          designation: "Office assistant & Junior developer",
-          image: "/employee/software/faiza-boman.jpeg",
-        },
-         
-        {
-          id: 5,
           name: "Mustafa",
           designation: "AI Assistant",
           image: "/employee/ai/mustafa.png",
@@ -118,7 +117,7 @@ export const teamData = {
           id: 4,
           name: "Niamat Ullah",
           designation: "GIS Analyst",
-          image: "/employee/gis/Niamat.jpg",
+          image: "/employee/gis/niamat.jpg",
         },
         {
           id: 5,
@@ -169,16 +168,16 @@ export const teamData = {
     //     },
     //   ],
     // },
-    {
-      heading: "Our Marketing Team",
-      members: [
-        {
-          id: 1,
-          name: "Basheer Ahmed",
-          designation: "Graphic Designer",
-          image: "/employee/marketing/basheer-ahmed.jpeg",
-        },
-      ],
-    },
+    // {
+    //   heading: "Our Marketing Team",
+    //   members: [
+    //     {
+    //       id: 1,
+    //       name: "Basheer Ahmed",
+    //       designation: "Graphic Designer",
+    //       image: "/employee/marketing/basheer-ahmed.jpeg",
+    //     },
+    //   ],
+    // },
   ],
 };
