@@ -85,7 +85,7 @@ logos: [
           id: 4,
           name: "Niamat Ullah",
           designation: "GIS Analyst",
-          image: "/employee/gis/Niamat.jpg",
+          image: "/employee/gis/niamat.jpg",
         },
         {
           id: 5,
