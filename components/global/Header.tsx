@@ -17,7 +17,7 @@ const tabs = [
     children: [{ name: "Board Members", path: "/teams/boardmembers" }],
   },
   { name: "Certificates", path: "/certificates" },
-  { name: "Our Products", path: "/products" },
+  // { name: "Our Products", path: "/products" },
   { name: "Our Partners", path: "/partners" },
   { name: "Portfolio", path: "/portfolio" },
 ];
