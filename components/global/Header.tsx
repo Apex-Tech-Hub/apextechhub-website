@@ -16,6 +16,8 @@ const tabs = [
   { name: "Our Products", path: "/products" },
   { name: "Our Partners", path: "/partners" },
   { name: "Portfolio", path: "/portfolio" },
+  { name: "Consultancy", path: "/consultancy" },
+  { name: "Courses", path: "/courses" },
 ];
 
 export default function Header({ active = "Home" }: { active?: string }) {
