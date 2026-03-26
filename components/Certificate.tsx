@@ -31,7 +31,7 @@ export default function CertificateCard({
         {/* Image */}
         <button
           onClick={() => setOpen(true)}
-          className="relative w-full h-100 md:h-155 rounded-xl overflow-hidden"
+          className="relative w-full h-100 md:h-100 rounded-xl overflow-hidden"
         >
           <Image
             src={image}
@@ -74,7 +74,7 @@ export default function CertificateCard({
               animate={{ scale: 1 }}
               exit={{ scale: 0.9 }}
               transition={{ duration: 0.2 }}
-              className="relative max-w-md w-full bg-white rounded-2xl overflow-hidden"
+              className="relative max-w-6xl w-full bg-white rounded-2xl overflow-hidden"
             >
               {/* Close */}
               <button
@@ -85,7 +85,7 @@ export default function CertificateCard({
               </button>
 
               {/* Zoomed Image */}
-              <div className="relative w-full h-155">
+              <div className="relative w-full h-200">
                 <Image
                   src={image}
                   alt={title}

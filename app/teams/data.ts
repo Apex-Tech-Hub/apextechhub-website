@@ -15,7 +15,7 @@ export const teamData = {
           {
             id: 2,
             name: "Israr Khan",
-            designation: "Chief Financial Officer",
+            designation: "Co-Founder & CFO",
             image:
               "/employee/executive/israr-khan.jpeg",
           },
@@ -55,10 +55,16 @@ export const teamData = {
           designation: "Cybersecurity Specialist",
           image: "/employee/cyber/sameer-azam.jpeg",
         },
+        {
+          id: 5,
+          name: "Faiza Boman Ali",
+          designation: "Smart Office assistant & Cybersecurity Analyst",
+          image: "/employee/software/faiza-boman.jpeg",
+        },
       ],
     },
     {
-      heading: "Our Software Development Team",
+      heading: "Our Software Development & AI Team",
       members: [
         {
           id: 1,
@@ -68,39 +74,110 @@ export const teamData = {
         },
         {
           id: 2,
-          name: "Faiza Boman Ali",
-          designation: "Office assistant & Junior developer",
-          image: "/employee/software/faiza-boman.jpeg",
-        },
-      ],
-    },
-     {
-      heading: "Our AI & ML Team",
-      members: [
-        {
-          id: 1,
           name: "Khalid Shah",
           designation: "Team Lead –AI",
           image: "/employee/ai/syed-khalid.jpeg",
         },
         {
-          id: 2,
+          id: 3,
+          name: "Shahzaib Khan",
+          designation: "Web GIS App Developer",
+          image: "/employee/software/shahzaib.jpg",
+        },
+        {
+          id: 4,
           name: "Mustafa",
           designation: "AI Assistant",
           image: "/employee/ai/mustafa.png",
         },
       ],
     },
-    {
-      heading: "Our Marketing Team",
+     {
+      heading: "Our GIS Team",
       members: [
         {
           id: 1,
-          name: "Basheer Ahmed",
-          designation: "Graphic Designer",
-          image: "/employee/marketing/basheer-ahmed.jpeg",
+          name: "Ahmed Shah",
+          designation: "Team Lead",
+          image: "/employee/gis/ahmedshah.jpeg",
+        },
+        {
+          id: 2,
+          name: "Amjad Khan",
+          designation: "GIS Analyst and Map Design",
+          image: "/employee/gis/amjad.jpg",
+        },
+        {
+          id: 3,
+          name: "Ayesha Kasi",
+          designation: "Capacity Builder and Trainer",
+          image: "/employee/gis/ayesha.jpg",
+        },
+        {
+          id: 4,
+          name: "Niamat Ullah",
+          designation: "GIS Analyst",
+          image: "/employee/gis/niamat.jpg",
+        },
+        {
+          id: 5,
+          name: "Muhammad Hassan",
+          designation: "Web GIS App Developer",
+          image: "/employee/gis/hassin.jpg",
+        },
+         {
+          id: 6,
+          name: "Basit Khan",
+          designation: "GIS Analayst",
+          image: "/employee/gis/basit.jpg",
+        },
+         {
+          id: 7,
+          name: "Muheeb Ullah",
+          designation: "Web GIS App Developer",
+          image: "/employee/gis/muheeb.jpg",
+        },
+         {
+          id: 8,
+          name: "Warisha",
+          designation: "Web GIS App Developer",
+          image: "/employee/gis/warisha.jpg",
+        },
+         {
+          id: 9,
+          name: "Salmana Ahmed  ",
+          designation: "Documentation/Reporting",
+          image: "/employee/gis/salmana.jpg",
         },
       ],
     },
+    //  {
+    //   heading: "Our AI & ML Team",
+    //   members: [
+    //     {
+    //       id: 1,
+    //       name: "Khalid Shah",
+    //       designation: "Team Lead –AI",
+    //       image: "/employee/ai/syed-khalid.jpeg",
+    //     },
+    //     {
+    //       id: 2,
+    //       name: "Mustafa",
+    //       designation: "AI Assistant",
+    //       image: "/employee/ai/mustafa.png",
+    //     },
+    //   ],
+    // },
+    // {
+    //   heading: "Our Marketing Team",
+    //   members: [
+    //     {
+    //       id: 1,
+    //       name: "Basheer Ahmed",
+    //       designation: "Graphic Designer",
+    //       image: "/employee/marketing/basheer-ahmed.jpeg",
+    //     },
+    //   ],
+    // },
   ],
 };
