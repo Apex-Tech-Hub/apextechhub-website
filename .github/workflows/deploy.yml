@@ -1,0 +1,32 @@
+name: Deploy to VPS
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USER }}
+          key: ${{ secrets.VPS_SSH_KEY }}
+          script: |
+            cd /var/www/apextechhub/ApexTechHub-Website
+            git pull origin main
+
+            docker build -t apextechhub .
+
+            docker stop apextechhub || true
+            docker rm apextechhub || true
+
+            docker run -d \
+              --name apextechhub \
+              -p 3000:3000 \
+              --restart unless-stopped \
+              apextechhub
