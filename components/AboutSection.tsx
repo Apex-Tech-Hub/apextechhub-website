@@ -56,7 +56,7 @@ export default function AboutSection({
       <div className="relative text-center lg:text-left z-10 flex-1 px-4 sm:px-10">
         <h2 className="text-4xl font-bold mb-4">{heading}</h2>
         <p className="text-lg mb-6 max-w-full lg:max-w-lg">
-          {description}
+          {description} test
         </p>
       </div>
 
