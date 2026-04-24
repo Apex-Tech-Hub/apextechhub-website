@@ -25,6 +25,7 @@ jobs:
           docker build -t ghcr.io/$REPO_LOWER:latest .
           docker push ghcr.io/$REPO_LOWER:latest
 
+          
   deploy:
     needs: build-and-push
     runs-on: ubuntu-latest
