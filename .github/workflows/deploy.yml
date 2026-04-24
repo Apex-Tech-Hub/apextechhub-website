@@ -1,31 +1,64 @@
-name: Deploy to VPS
+name: Docker Build and Deploy
 
 on:
   push:
     branches:
       - main
 
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
+# Necessary permissions to push to GitHub Container Registry
+permissions:
+  contents: read
+  packages: write
 
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
     steps:
-      - name: Deploy via SSH
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Log in to GitHub Container Registry
+        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
+
+      - name: Build and Push Docker Image
+        run: |
+          # Convert repository name to lowercase to avoid Docker naming errors
+          REPO_LOWER=$(echo "${{ github.repository }}" | tr '[:upper:]' '[:lower:]')
+          docker build -t ghcr.io/$REPO_LOWER:latest .
+          docker push ghcr.io/$REPO_LOWER:latest
+
+  deploy:
+    needs: build-and-push
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to VPS via SSH
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.VPS_HOST }}
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.VPS_SSH_KEY }}
           script: |
-            # Login to GitHub Registry
+            # 1. Convert repo name to lowercase to match the build step
+            REPO_LOWER=$(echo "${{ github.repository }}" | tr '[:upper:]' '[:lower:]')
+            
+            # 2. Login to Registry on the VPS
             echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
             
-            # Stop any old version
+            # 3. Stop and remove any old containers (both names to be safe)
             docker stop nextjs-app || true
             docker rm nextjs-app || true
+            docker stop apextechhub || true
+            docker rm apextechhub || true
             
-            # Pull the EXACT image built in the previous step
-            docker pull ghcr.io/ibrarli/apextechhub-website:latest
+            # 4. Pull the fresh image
+            docker pull ghcr.io/$REPO_LOWER:latest
             
-            # Run it
-            docker run -d --name nextjs-app -p 3000:3000 ghcr.io/ibrarli/apextechhub-website:latest
+            # 5. Run the new container
+            docker run -d \
+              --name nextjs-app \
+              --restart unless-stopped \
+              -p 3000:3000 \
+              ghcr.io/$REPO_LOWER:latest
+            
+            # 6. Cleanup unused images to save disk space
+            docker image prune -f
