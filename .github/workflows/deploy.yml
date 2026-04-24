@@ -17,16 +17,15 @@ jobs:
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.VPS_SSH_KEY }}
           script: |
-            cd /var/www/apextechhub/ApexTechHub-Website
-            git pull origin main
-
-            docker build -t apextechhub .
-
-            docker stop apextechhub || true
-            docker rm apextechhub || true
-
-            docker run -d \
-              --name apextechhub \
-              -p 3000:3000 \
-              --restart unless-stopped \
-              apextechhub
+            # Login to GitHub Registry
+            echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
+            
+            # Stop any old version
+            docker stop nextjs-app || true
+            docker rm nextjs-app || true
+            
+            # Pull the EXACT image built in the previous step
+            docker pull ghcr.io/ibrarli/apextechhub-website:latest
+            
+            # Run it
+            docker run -d --name nextjs-app -p 3000:3000 ghcr.io/ibrarli/apextechhub-website:latest
