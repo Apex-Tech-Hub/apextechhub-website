@@ -15,21 +15,16 @@ interface CertificateData {
 }
 
 interface CertificatePageProps {
+    heading: string;
     active: string;
     certificates: CertificateData[];
 }
 
-export default function CombineCerticiates({ active, certificates }: CertificatePageProps) {
+export default function CombineCerticiates({ heading, active, certificates }: CertificatePageProps) {
   return (
     <div className="mt-30">
         <Header active={active} />
-        <h1 className="text-5xl font-bold text-center mt-10">Company Certifications</h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
-            {certificates.map((cert) => (
-                <Certificate key={cert.id} {...cert} />
-            ))}
-        </div>
-        <h1 className="text-5xl font-bold text-center mt-10">Team Certifications</h1>
+        <h1 className="text-5xl font-bold text-center mt-10">{heading}</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
             {certificates.map((cert) => (
                 <Certificate key={cert.id} {...cert} />
