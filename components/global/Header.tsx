@@ -7,13 +7,21 @@ import { Menu, X, ChevronRight } from "lucide-react";
 
 const tabs = [
   { name: "Home", path: "/" },
-  { name: "Cybersecurity", path: "/cybersecurity" },
-  { name: "IOT", path: "/iot" },
-  { name: "GIS", path: "/gis" },
+    {
+    name: "Hubs",
+    path: "",
+    children: [{ name: "Cybersecurity", path: "/hubs/cybersecurity" },
+    { name: "IOT", path: "/hubs/iot" },
+    { name: "GIS", path: "/hubs/gis" },
+    { name: "Software Development", path: "/hubs/software-development" },
+    ],
+  },
   {
     name: "Teams",
-    path: "/teams",
-    children: [{ name: "Board Members", path: "/teams/boardmembers" }],
+    path: "",
+    children: [{ name: "Board Members", path: "/teams/boardmembers" },
+    { name: "Core Team", path: "/teams" },
+    ],
   },
   { name: "Certificates", path: "/certificates" },
   { name: "Our Partners", path: "/partners" },
@@ -93,7 +101,7 @@ export default function Header({ active = "Home" }: { active?: string }) {
                   {/* Desktop Dropdown */}
                   {tab.children && (
                     <div className="absolute left-0 top-full pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition">
-                      <div className="bg-white/90 backdrop-blur-md rounded-full shadow-lg border border-gray-200 min-w-[220px] overflow-hidden">
+                      <div className="bg-white backdrop-blur-md rounded-lg shadow-lg border border-gray-200 min-w-[220px] overflow-hidden">
                         {tab.children.map((child) => (
                           <button
                             key={child.name}
