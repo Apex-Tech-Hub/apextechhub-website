@@ -75,5 +75,5 @@ Regularly monitor system resources to prevent deployment failures:
 ## About Apex Tech Hub
 Apex Tech Hub is dedicated to delivering high-quality technical solutions and digital transformations. This repository represents the core digital presence of the organization, focusing on clean architecture and reliable service delivery.
 
-**Lead Maintainer:** Apex Tech Hub Development Team  
+**Lead Maintainer:** Ibrar Ali
 **Last Updated:** May 2026
